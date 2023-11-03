@@ -19,13 +19,6 @@ class Hangman:
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
-        unique_letters = set()
-        for char in self.word:
-            if char.isalpha():
-                unique_letters.add(char)
-        self.num_letters = len(unique_letters)
-
-
     def _check_guess(self, guess):
 
         """
