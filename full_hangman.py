@@ -63,7 +63,7 @@ class Hangman:
             else:
                 self._check_guess(guess)
                 self.list_of_guesses.append(guess)
-                return #end
+                return #...
 
     def play_game(self):
 
@@ -72,9 +72,9 @@ class Hangman:
         """
 
         while self.num_lives > 0 and self.num_letters > 0:
-            print("Word guessed so far:", ' '.join(self.word_guessed))
+            print("Word guessed so far:", " ".join(self.word_guessed))
             print("Number of lives:", self.num_lives)
-            print("List of guesses:", ' '.join(self.list_of_guesses))
+            print("List of guesses:", ", ".join(self.list_of_guesses))
             self._ask_for_input()
 
         if self.num_lives == 0:
